@@ -7,11 +7,11 @@ def Args():
     # Basic options
     parser.add_argument('--mode', type=str, default='train',
                         help='Train or test')
-    parser.add_argument('--content_dir', type=str, required=True,
+    parser.add_argument('--content_dir', type=str, default='../../WikiArt-Emotions/data_91/content/',
                         help='Directory path to a batch of content images')
-    parser.add_argument('--texture_dir', type=str, required=True,
+    parser.add_argument('--texture_dir', type=str, default='../../WikiArt-Emotions/data_91/style/',
                         help='Directory path to a batch of texture images')
-    parser.add_argument('--color_dir', type=str, required=True,
+    parser.add_argument('--color_dir', type=str, default='../../WikiArt-Emotions/data_91/style/',
                         help='Directory path to a batch of Color images')
     parser.add_argument('--out_root', type=str, default='output/',
                         help='Root directory for outputs')
